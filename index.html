@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/31e0c3e51b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="media/diana jordan.png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>UX|UI Designer &amp; Software Developer</p>
+          <h1>
+            Hi there, I'm <span>Diana</span>. <br />
+            currently based <br />in OKC.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="media/selfie.jpg" alt="self" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello there, I'm Diana. I'm an introverted rock climbing and
+              outdoor enthusiast who loves to code and drink some good wine. I
+              was born in 1997, a gen-z girly with a millenial mindset. I have
+              found this interesting thing called "passion" when it comes to
+              coding, and life has never been the same. I have been creating
+              intuitive and user-friendly designs since the pandemic days of
+              2020. My passion lies in front-end development and UX Design.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UX | UI</span><br />Designing user-friendly web/apps
+                </li>
+                <li>
+                  <span>Software Development</span><br />Building responsive
+                  software
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - 2023</span><br />Transportation Area Manager at
+                  Amazon
+                </li>
+                <li>
+                  <span>2020 - 2021</span><br />Logistics Specialist at Amazon
+                </li>
+                <li>
+                  <span>2019 - 2020</span><br />Warehouse Associate at Amazon
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020</span><br />Grow with Google <br />
+                  UX | UI Design
+                </li>
+                <li>
+                  <span>2023</span><br />Correlation One <br />
+                  Software Development
+                </li>
+                <li>
+                  <span>2023</span><br />FreeCodeCamp <br />
+                  Web development
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERTISE -->
+    <div id="expertise">
+      <div class="container">
+        <h1 class="sub-title">My Expertise</h1>
+        <div class="expertise-list">
+          <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>Designing</h2>
+            <p>
+              I possess a strong foundation in the principles of UX | UI design.
+              My knowledge of the most resourced UX tools such as Figma and
+              Adobe allow me to create seamless and user-friendly designs that
+              are both unique and pleasant to the eye.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Developing</h2>
+            <p>
+              My knowledge of the basic core languages of coding- HTML, CSS and
+              JavaScript allow me to seamlessly integrate with other design
+              technologies and tools to create engaging and visually appealing
+              websites.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2>Creating</h2>
+            <p>
+              Aside from my coding and developing experience, I also like to
+              take the time to learn about other design and CMS tools such as
+              Canva, WordPress, Wix, etc. I do this in order to understand the
+              market for these and also facilitate certain projects with a
+              no-code tool.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="media/comingsoon.jpg" alt="work photo" />
+            <div class="layer">
+              <h3>UX PROJECT</h3>
+              <p>This space will serve to showcase my best UX project</p>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="media/comingsoon.jpg" alt="work photo" />
+            <div class="layer">
+              <h3>SOFT DEV PROJECT</h3>
+              <p>This space will serve to showcase my best SOFT DEV project</p>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="media/comingsoon.jpg" alt="work photo" />
+            <div class="layer">
+              <h3>CREATIVE PROJECT</h3>
+              <p>This space will serve to showcase my best CREATIVE project</p>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- CONTACT ME -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-envelope"></i> dianasosa251997@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +1 580-334-6108</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/dianajordan1997/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/_deejordan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/dee-jordan" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://codepen.io/dianasosa" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+            </div>
+            <a href="Official Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form action="" id="contactForm">
+              <div class="alert">Your message has been sent.</div>
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="Email"
+                id="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="textarea"
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Created by Diana Jordan ©</p>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
